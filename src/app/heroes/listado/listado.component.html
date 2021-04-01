@@ -1,0 +1,22 @@
+TODO: Acá se aprende so
+
+<p>listado de héroes</p>
+
+<h3 *ngIf="heroes.length<3">Heroe Borrado</h3>
+
+<div>
+    <li *ngFor="let heroeStr of heroeString; let i=index;">
+        {{ i+1 }} -- {{ heroeStr }}
+    </li>
+</div>
+
+<button (click)="borrarHeroe()">
+    borrar
+</button>
+
+<ul>
+    <li *ngFor="let heroe of heroes; let i=index;">
+        {{ i+1 }} -- {{ heroe }}
+    </li>
+</ul>
+
