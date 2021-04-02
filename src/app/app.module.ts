@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HeroesModule } from './heroes/heroes.module';
 import { contadorModule } from './contador/contador.module';
+import { DbzModule } from './dbz/dbz.module';
 
 //TODO: Cuando se crea un componente, tiene que estar importando en un modulo
 //Incluir los componentes que serán parte del modulo.
@@ -15,7 +16,8 @@ import { contadorModule } from './contador/contador.module';
   imports: [ //Se colocan otros módulos. Siempre habrá un modulo en import
     BrowserModule,
     // HeroesModule,
-    contadorModule
+    contadorModule,
+    DbzModule
   ],
   providers: [], //Servicios especificos a un módulo
   bootstrap: [AppComponent] //Componente principal al que se quiere enlazar. Este se pone automáticamente
